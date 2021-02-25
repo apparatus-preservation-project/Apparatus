@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+	<ScrollView android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+		<TableLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:spacing="40dp" android:stretchColumns="1">
+			<TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+				<EditText android:id="@+id/levelname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="" android:hint="Level name" android:singleLine="true"/>
+			</TableRow>
+			<TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">
+				<EditText android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="" android:hint="Description" android:minLines="2" android:singleLine="false"/>
+			</TableRow>
+			<TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">
+				<EditText android:id="@+id/keywords" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="" android:hint="Keywords, space-separated" android:minLines="2" android:singleLine="false"/>
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>

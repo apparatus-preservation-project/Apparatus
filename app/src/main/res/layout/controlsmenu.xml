@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+	<ScrollView android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+		<TableLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:spacing="40dp" android:stretchColumns="1">
+			<TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+				<TextView android:layout_height="wrap_content" android:layout_column="0" android:text="Reset camera at simulation stop"/>
+				<CheckBox android:id="@+id/resetcam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1"/>
+			</TableRow>
+			<TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">
+				<TextView android:layout_height="wrap_content" android:layout_column="0" android:text="Camera swipe decay"/>
+				<SeekBar android:id="@+id/camerasmoothness" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="1"/>
+			</TableRow>
+			<TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">
+				<TextView android:layout_height="wrap_content" android:layout_column="0" android:text="Camera swipe speed"/>
+				<SeekBar android:id="@+id/cameraspeed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_column="1"/>
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>
