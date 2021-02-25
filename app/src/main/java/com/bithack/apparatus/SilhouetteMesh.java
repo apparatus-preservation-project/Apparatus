@@ -187,6 +187,7 @@ public class SilhouetteMesh {
 			Vertex n;
 			boolean found = false;
 			int x = 0;
+			n = SilhouetteMesh.this.slist.get(x);
 			while (true) {
 				if (x >= SilhouetteMesh.this.slist.size()) {
 					break;

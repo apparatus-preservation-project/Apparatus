@@ -64,6 +64,8 @@ public class L {
 									continue;
 							}
 						}
+					} else {
+						break;
 					}
 				} catch (Exception e) {
 					e.printStackTrace();

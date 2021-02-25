@@ -15,6 +15,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 import com.badlogic.gdx.Gdx;
+import com.bithack.apparatus.ApparatusApplication;
 
 public class CommunityActivity extends Activity {
 	public static final int LOADING_DIALOG = 2;
@@ -23,6 +24,7 @@ public class CommunityActivity extends Activity {
 	public static final int REGISTERING_DIALOG = 5;
 	Bundle bundle;
 	public WebView webview;
+	/*
 
 	public void onResume() {
 		super.onResume();
@@ -43,14 +45,13 @@ public class CommunityActivity extends Activity {
 		settings.setJavaScriptEnabled(true);
 		settings.setSupportZoom(false);
 		this.webview.setWebViewClient(new WebViewClient() {
-			/* class com.bithack.apparatus.CommunityActivity.AnonymousClass1 */
 
 			@Override // android.webkit.WebViewClient
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				Uri uri = Uri.parse(url);
 				if (url.substring(0, 12).equals("apparatus://")) {
 					if (url.equals("apparatus://register")) {
-						this.showDialog(0);
+						ApparatusApplication.showDialog(0);
 					} else if (url.equals("apparatus://login")) {
 						this.showDialog(1);
 					} else {
@@ -111,7 +112,6 @@ public class CommunityActivity extends Activity {
 		this.webview.saveState(this.bundle);
 	}
 
-	/* access modifiers changed from: protected */
 	public Dialog onCreateDialog(int id) {
 		Dialog ret = null;
 		switch (id) {
@@ -132,7 +132,6 @@ public class CommunityActivity extends Activity {
 				CharSequence[] sbitems = {L.get("mainmenu"), L.get("quit")};
 				bld.setTitle(L.get("menu"));
 				bld.setItems(sbitems, new DialogInterface.OnClickListener() {
-					/* class com.bithack.apparatus.CommunityActivity.AnonymousClass2 */
 
 					public void onClick(DialogInterface dialog, int which) {
 						switch (which) {
@@ -188,4 +187,5 @@ public class CommunityActivity extends Activity {
 			return true;
 		}
 	}
+	*/
 }

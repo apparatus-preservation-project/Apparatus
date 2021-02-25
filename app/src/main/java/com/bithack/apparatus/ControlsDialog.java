@@ -11,18 +11,21 @@ import android.widget.SeekBar;
 
 public class ControlsDialog {
 	final ApparatusApplication activity;
-	final CheckBox c_reset = ((CheckBox) this.view.findViewById(2130968617));
+	final View view;
+	final CheckBox c_reset;
 	Dialog dialog;
-	final SeekBar s_smoothness = ((SeekBar) this.view.findViewById(2130968619));
-	final SeekBar s_speed = ((SeekBar) this.view.findViewById(2130968621));
+	final SeekBar s_smoothness;
+	final SeekBar s_speed;
 	int smoothness;
 	int speed;
-	final View view;
 
 	public ControlsDialog(ApparatusApplication app) {
 		this.activity = app;
 		AlertDialog.Builder builder = new AlertDialog.Builder(app);
 		this.view = LayoutInflater.from(app).inflate(2130903058, (ViewGroup) null);
+		this.c_reset = ((CheckBox) this.view.findViewById(2130968617));
+		this.s_smoothness = ((SeekBar) this.view.findViewById(2130968619));
+		this.s_speed = ((SeekBar) this.view.findViewById(2130968621));
 		builder.setTitle(L.get("controlssettings"));
 		builder.setView(this.view);
 		this.s_speed.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

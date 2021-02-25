@@ -1330,9 +1330,9 @@ public class Game extends Screen implements InputProcessor, WidgetValueCallback 
 			if (enable_menu && connectanims.size() > 0) {
 				Iterator i = connectanims.iterator();
 				while (i.hasNext()) {
-					if (!i.next().render()) {
-						i.remove();
-					}
+					//if (!i.next().render()) {
+					//	i.remove();
+					//}
 				}
 			}
 			if (!(mode == 3 || this.grabbed_object == null)) {

@@ -275,7 +275,6 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 									ApparatusApplication.this.self.showDialog(11);
 									break;
 								}
-								break;
 							case 4:
 								ApparatusApplication.this.run_on_gl_thread(new Runnable() {
 									/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass4.AnonymousClass4 */
@@ -707,7 +706,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass23 */
 
 			public void run() {
-				this.showDialog(5);
+				ApparatusApplication.this.showDialog(5);
 			}
 		});
 	}
@@ -718,7 +717,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass24 */
 
 			public void run() {
-				this.showDialog(0);
+				ApparatusApplication.this.showDialog(0);
 			}
 		});
 	}
@@ -729,7 +728,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass25 */
 
 			public void run() {
-				this.showDialog(1);
+				ApparatusApplication.this.showDialog(1);
 			}
 		});
 	}
@@ -740,7 +739,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass26 */
 
 			public void run() {
-				this.showDialog(4);
+				ApparatusApplication.this.showDialog(4);
 			}
 		});
 	}
@@ -752,10 +751,10 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 
 			public void run() {
 				try {
-					this.removeDialog(6);
+					ApparatusApplication.this.removeDialog(6);
 				} catch (Exception e) {
 				}
-				this.showDialog(6);
+				ApparatusApplication.this.showDialog(6);
 			}
 		});
 	}
@@ -766,7 +765,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass28 */
 
 			public void run() {
-				this.showDialog(7);
+				ApparatusApplication.this.showDialog(7);
 			}
 		});
 	}
@@ -777,7 +776,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass29 */
 
 			public void run() {
-				this.showDialog(8);
+				ApparatusApplication.this.showDialog(8);
 			}
 		});
 	}
@@ -835,9 +834,9 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 						}
 						synchronized (this) {
 							if (_s == 1) {
-								this.status = 1;
+								//this.status = 1;
 							} else {
-								this.status = 2;
+								//this.status = 2;
 							}
 						}
 					}
@@ -891,7 +890,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass30 */
 
 			public void run() {
-				this.showDialog(21);
+				ApparatusApplication.this.showDialog(21);
 			}
 		});
 	}
@@ -902,7 +901,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass31 */
 
 			public void run() {
-				this.showDialog(22);
+				ApparatusApplication.this.showDialog(22);
 			}
 		});
 	}
@@ -919,9 +918,9 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 
 			public void run() {
 				if (ApparatusApplication.this.info_dialog != null) {
-					this.removeDialog(15);
+					ApparatusApplication.this.removeDialog(15);
 				}
-				this.showDialog(15);
+				ApparatusApplication.this.showDialog(15);
 			}
 		});
 	}
@@ -932,7 +931,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass33 */
 
 			public void run() {
-				this.showDialog(14);
+				ApparatusApplication.this.showDialog(14);
 			}
 		});
 	}
@@ -943,7 +942,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass34 */
 
 			public void run() {
-				this.showDialog(10);
+				ApparatusApplication.this.showDialog(10);
 			}
 		});
 	}
@@ -958,7 +957,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass35 */
 
 			public void run() {
-				this.showDialog(17);
+				ApparatusApplication.this.showDialog(17);
 			}
 		});
 	}
@@ -997,7 +996,7 @@ public class ApparatusApplication extends AndroidApplication implements Apparatu
 			/* class com.bithack.apparatus.ApparatusApplication.AnonymousClass36 */
 
 			public void run() {
-				this.showDialog(24);
+				ApparatusApplication.this.showDialog(24);
 			}
 		});
 	}

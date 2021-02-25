@@ -1,5 +1,6 @@
 package com.bithack.apparatus.graphics;
 
+import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL11;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -92,6 +93,6 @@ public class G {
 		p_cam.near = 0.1f;
 		p_cam.direction.set(-1.8f, 2.0f, -1.0f).nor();
 		p_cam.update();
-		font = new BitmapFont();
+		font = new BitmapFont(Gdx.files.getFileHandle("data/misc/arial-15.fnt", Files.FileType.Internal), Gdx.files.getFileHandle("data/misc/arial-15.png", Files.FileType.Internal), false);
 	}
 }

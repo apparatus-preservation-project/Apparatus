@@ -11,12 +11,13 @@ import java.io.IOException;
 public class AndroidSettingsAdapter extends Settings.Adapter {
 	public static AndroidSettingsAdapter instance;
 	AndroidApplication app;
-	SharedPreferences.Editor editor = this.prefs.edit();
+	SharedPreferences.Editor editor;
 	SharedPreferences prefs;
 
 	public AndroidSettingsAdapter(AndroidApplication app2) {
 		instance = this;
 		this.prefs = app2.getPreferences(0);
+		this.editor = this.prefs.edit();
 		this.app = app2;
 	}
 

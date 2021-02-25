@@ -117,7 +117,8 @@ public class ObjectFactory {
 		if (num_objects <= 0) {
 			return objects;
 		}
-		while (true) {
+		boolean uwu = true;
+		while (uwu) {
 			if (testx.read(b, 0, 6) != -1) {
 				int group = b[0] & 255;
 				int child = ((b[1] & 255) << 8) | (b[2] & 255);
@@ -188,8 +189,8 @@ public class ObjectFactory {
 								}
 							}
 						}
-						if (error) {
-						}
+						//if (error) {
+						//}
 					}
 					boolean z = o instanceof Damper;
 					objects[num_added_objects] = o;

@@ -194,10 +194,10 @@ public class PublishDialog {
 						_s = 1;
 						synchronized (this) {
 							if (_s != 1 || data == null) {
-								this.status = 2;
+								//this.status = 2;
 							} else {
-								this.level_data = data;
-								this.status = 1;
+								//this.level_data = data;
+								//this.status = 1;
 							}
 						}
 					} catch (Exception e) {
